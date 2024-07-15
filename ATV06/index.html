@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array Original</h2>
+    <p id="original"></p>
+    <h2>Array c/ Mais de Cinco Caracteres</h2>
+    <p id="demo"></p>
+    <script>
+        const nome = ['tiago','waleska','calebe','daniel','pitombeira'];
+
+        const nomeCaractere = nome.filter(nome => nome.length > 5);
+
+        const result = nomeCaractere;
+
+        document.getElementById('original').innerText = nome;
+        document.getElementById('demo').innerText = result;
+    </script>
+
+</body>
+</html>

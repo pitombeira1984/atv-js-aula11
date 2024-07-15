@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Numeros do Array</h2>
+    <p id="numbers"></p>
+    <h2>Numeros do Array ao Quadrado</h2>
+    <p id="quadrado"></p>
+    <script>
+        const numbers = [65,44,12,4];
+        
+        const numbersQuadrado = numbers.map(elemento => elemento ** 2);
+
+        document.getElementById('numbers').innerText = numbers;
+
+        document.getElementById('quadrado').innerText = numbersQuadrado;  
+    </script>
+</body>
+</html>
