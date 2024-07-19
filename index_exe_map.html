@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="minusculo"></p>
+    <p id="maiusculo"></p>
+    <script>
+        const arr = ['a','b','c','d','e','f'];
+        
+        function tornarMaiusculo(elemento,indice,array){
+
+            return elemento.toUpperCase();
+
+        }
+        const newArr = arr.map(tornarMaiusculo);
+        console.log(newArr);
+        document.getElementById('minusculo').textContent = arr;
+        document.getElementById('maiusculo').textContent = newArr;
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array</h2>
+    <p id="numbers"></p>
+    <h2>Numeros Maiores que 10</h2>
+    <p id="maiorQueDez"></p>
+    <h2>Numeros Pares</h2>
+    <p id="pares"></p>
+    <script>
+        const numbers = [10,25,4,30,15,8];
+        document.getElementById('numbers').textContent = numbers
+        
+        const numerosMaioresQueDez = numbers.filter(numbers => numbers > 10);
+        document.getElementById('maiorQueDez').textContent = numerosMaioresQueDez;
+
+        const numerosPares = numbers.filter(numbers => numbers % 2 === 0);
+        document.getElementById('pares').textContent = numerosPares;
+    </script>
+</body>
+</html>

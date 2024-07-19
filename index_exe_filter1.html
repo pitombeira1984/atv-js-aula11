@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><input type="number" name="" id="ageToCheck"></p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+    <script>
+        const ages = [32,33,12,40];
+        
+        function checkAge(age){
+
+            return age > document.getElementById('ageToCheck').value;
+
+        }
+
+        function myFunction(){
+            document.getElementById('demo').innerText = ages.filter(checkAge);
+        }
+    </script>
+</body>
+</html>

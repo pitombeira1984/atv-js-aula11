@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Array</h2>
+    <p id="numbers"></p>
+    <h2>Soma do Array</h2>
+    <p id="demo"></p>
+    <script>
+        const numbers = [175,50,25];
+        const result = numbers.reduce(myFunc);
+        document.getElementById('numbers').textContent = numbers;
+
+        function myFunc(total, num){
+            return total - num;
+        }
+        
+        document.getElementById('demo').textContent = result;
+/*Valor inicial: Um valor inicial opcional para o acumulador. Se não
+fornecido, o primeiro elemento do array é usado como valor inicial e a
+iteração começa a partir do segundo elemento.*/
+    </script>
+</body>
+</html>
